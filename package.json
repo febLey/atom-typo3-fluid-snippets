@@ -1,0 +1,14 @@
+{
+  "name": "typo3-fluid-snippets",
+  "description": "TypoScript support for Atom",
+  "keywords": [
+    "typo3",
+    "fluid",
+    "snippets"
+  ],
+  "repository": "https://github.com/febLey/atom-typo3-fluid-snippets.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
