@@ -2,4 +2,6 @@
 
 A collection for snippets for typo3 fluid.
 
-Originally forked from [atom-typo3](https://github.com/jawee/atom-typo3) and split into multiple packages.
+Originally forked from [atom-typo3](https://github.com/jawee/atom-typo3) and split into multiple packages:
+
+* [language-typoscript](https://github.com/febLey/atom-language-typoscript)
