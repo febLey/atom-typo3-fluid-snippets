@@ -80,6 +80,9 @@
   'f:link.action':
     'prefix': 'f:link.action'
     'body': '<f:link.action ${1:controller="$2" }${3:action="$4" }${5:arguments="$6" }>$7</f:link.action>'
+  'f:link.typolink':
+    'prefix': 'f:link.typolink'
+    'body': '<f:link.typolink parameter="$1" ${2:class="$3" }>$4</f:link.typolink>'
   'f:render':
     'prefix': 'f:render'
     'body': '<f:render ${1:section="$2" }${3:partial="$4" }${5:arguments="{$6\\}"}/>'
