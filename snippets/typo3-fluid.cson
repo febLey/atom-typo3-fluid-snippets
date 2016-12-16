@@ -1,103 +1,103 @@
 '.text.html':
   'f:be.container':
-    'prefix': 'f:be.container'
+    'prefix': 'fbe_container'
     'body': '<f:be.container pageTitle="$1">\n\t$2\n</f:be.container>'
   'f:be.menus.actionMenu':
-    'prefix': 'f:be.menus.actionMenu'
+    'prefix': 'fbe_menus_actionMenu'
     'body': '<f:be.menus.actionMenu>\n\t<f:be.menus.actionMenuItem label="${1:<f:translate key="$2" />}" controller="$3" action="$4" />\n\t$5\n</f:be.menus.actionMenu>'
   'f:be.menus.actionMenuItem':
-    'prefix': 'f:be.menus.actionMenuItem'
+    'prefix': 'fbe_menus_actionMenuItem'
     'body': '<f:be.menus.actionMenuItem label="${1:<f:translate key="$2" />}" controller="$3" action="$4" />'
   'f:cObject':
-    'prefix': 'f:cObject'
+    'prefix': 'fcObject'
     'body': '<f:cObject typoscriptObjectPath="$1" />'
   'f:comment':
-    'prefix': 'f:comment'
+    'prefix': 'fcomment'
     'body': '<f:comment>$1</f:comment>'
   'f:count':
-    'prefix': 'f:count'
+    'prefix': 'fcount'
     'body': '<f:count subject="{$1}" />'
   'f:debug':
-    'prefix': 'f:debug'
+    'prefix': 'fdebug'
     'body': '<f:debug title="$1">{$1}</f:debug>'
   'f:else':
-    'prefix': 'f:else'
+    'prefix': 'felse'
     'body': '<f:else>\n\t$4\n</f:else>'
   'f:escape':
-    'prefix': 'f:escape'
+    'prefix': 'fescape'
     'body': '<f:escape ${1:type="$2"}>$3</f:escape>$4'
   'f:for':
-    'prefix': 'f:for'
+    'prefix': 'ffor'
     'body': '<f:for each="{$1}" as="$2"${3:key="$4" }>\n\t$5\n</f:for>'
   'f:form':
-    'prefix': 'f:form'
+    'prefix': 'fform'
     'body': '<f:form action="$1" ${2:controller="$3" }${4:object="{$5\\}" }${6:name="$7" }${8:package="$9" }${10:enctype="${11:multipart/form-data}" }>\n\t$12\n</f:form>'
   'f:form.errors':
-    'prefix': 'f:form.errors'
+    'prefix': 'fform_errors'
     'body': '<f:form.errors>\n\t{error.code} / {error.message}\n\t${1:<ul>\n\t\t<f:for each="{error.errors}" as="errorDetail">\n\t\t\t<li>{errorDetail.code\\} / {errorDetail.message\\} / {errorDetail.propertyName\\}</li>\n\t\t\t${2:<ul>\n\t\t\t\t<f:for each="{errorDetail.errors\\}" as="errorSuperDetail">\n\t\t\t\t\t<li>{errorSuperDetail.code\\}  {errorDetail.message\\}</li>\n\t\t\t\t</f:for>\n\t\t\t</li>\n\t\t</ul>}\n\t\t</f:for>\n\t</ul>}\n</f:form.errors>$3\n'
   'f:form.hidden':
-    'prefix': 'f:form.hidden'
+    'prefix': 'fform_hidden'
     'body': '<f:form.hidden name="$1" value="$2" />'
   'f:form.select':
-    'prefix': 'f:form.select'
+    'prefix': 'fform_select'
     'body': '<f:form.select property="$1" options="$2" ${3:optionLabelField="$4" }/>'
   'f:form.submit':
-    'prefix': 'f:form.submit'
+    'prefix': 'fform_submit'
     'body': '<f:form.submit value="${1:{f:translate(key:\'$2\')\\}}" />'
   'f:form.textfield':
-    'prefix': 'f:form.textfield'
+    'prefix': 'fform_textfield'
     'body': '<f:form.textfield ${1:property="$2"} ${3:value="$4" name="$5"} ${6:placeholder="$7"} />'
   'f:form.textarea':
-    'prefix': 'f:form.textarea'
+    'prefix': 'fform_textarea'
     'body': '<f:form.textarea property="$1" rows="${2:3}" cols="${3:80}" />'
   'f:format.crop':
-    'prefix': 'f:format.crop'
+    'prefix': 'fformat_crop'
     'body': '<f:format.crop maxCharacters="$1">$2</f:format.crop>'
   'f:format.html':
-    'prefix': 'f:format.html'
+    'prefix': 'fformat_html'
     'body': '<f:format.html>$1</f:format.html>'
   'f:format.nl2br':
-    'prefix': 'f:format.nl2br'
+    'prefix': 'fformat_nl2br'
     'body': '<f:format.nl2br>$1</f:format.nl2br>'
   'f:format.raw':
-    'prefix': 'f:format.raw'
+    'prefix': 'fformat_raw'
     'body': '<f:format.raw>$1</f:format.raw>'
   'f:if Inline':
-    'prefix': 'f:if'
+    'prefix': 'fif'
     'body': '{f:if(condition:\'{$1} ${2:== $3}\' then:\'$4\')}'
   'f:if Tag':
-    'prefix': 'f:if'
+    'prefix': 'fif'
     'body': '<f:if condition="{$1}$2">\n\t<f:then>\n\t\t$3\n\t</f:then>${4:\n\t<f:else>\n\t\t$5\n\t</f:else>\n}</f:if>\n'
   'f:image':
-    'prefix': 'f:image'
+    'prefix': 'fimage'
     'body': '<f:image src="$1" />'
   'f:layout':
-    'prefix': 'f:layout'
+    'prefix': 'flayout'
     'body': '<f:layout name="$1" />'
   'f:uri.action':
-    'prefix': 'f:uri.action'
+    'prefix': 'furi_action'
     'body': '<f:uri.action ${1:controller="$2" }${3:action="$4" }${5:arguments="$6" } />$7'
   'f:link.action':
-    'prefix': 'f:link.action'
+    'prefix': 'flink_action'
     'body': '<f:link.action ${1:controller="$2" }${3:action="$4" }${5:arguments="$6" }>$7</f:link.action>'
   'f:link.typolink':
-    'prefix': 'f:link.typolink'
+    'prefix': 'flink_typolink'
     'body': '<f:link.typolink parameter="$1" ${2:class="$3" }>$4</f:link.typolink>'
   'f:render':
-    'prefix': 'f:render'
+    'prefix': 'frender'
     'body': '<f:render ${1:section="$2" }${3:partial="$4" }${5:arguments="{$6\\}"}/>'
   'f:renderFlashMessages':
-    'prefix': 'f:renderFlashMessages'
+    'prefix': 'frenderFlashMessages'
     'body': '<f:renderFlashMessages style="background-color: #dfd; padding: 12px;" />'
   'f:section':
-    'prefix': 'f:section'
+    'prefix': 'fsection'
     'body': '<f:section name="$1">\n\t$2\n</f:section>'
   'f:switch':
-    'prefix': 'f:switch'
+    'prefix': 'fswitch'
     'body': '<f:switch expression="${1}">\n\t<f:case value="${2}">\n\t\t${3}\n\t</f:case>\n\t<f:case default="TRUE">\n\t\t${4}\n\t</f:case>>\n</f:switch>\n'
   'f:translate Inline':
-    'prefix': 'f:translate'
+    'prefix': 'ftranslate'
     'body': '{f:translate(key: \'$1\', ${2:arguments:{0: \'$3\'\\}})}'
   'f:translate Tag':
-    'prefix': 'f:translate'
+    'prefix': 'ftranslate'
     'body': '<f:translate key="$1" />'
