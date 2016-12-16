@@ -92,6 +92,9 @@
   'f:section':
     'prefix': 'f:section'
     'body': '<f:section name="$1">\n\t$2\n</f:section>'
+  'f:switch':
+    'prefix': 'f:switch'
+    'body': '<f:switch expression="${1}">\n\t<f:case value="${2}">\n\t\t${3}\n\t</f:case>\n\t<f:case default="TRUE">\n\t\t${4}\n\t</f:case>>\n</f:switch>\n'
   'f:translate Inline':
     'prefix': 'f:translate'
     'body': '{f:translate(key: \'$1\', ${2:arguments:{0: \'$3\'\\}})}'
